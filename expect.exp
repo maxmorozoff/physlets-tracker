@@ -1,0 +1,45 @@
+#!/usr/bin/expect -f
+
+
+set timeout -1
+spawn ./Tracker-6.0.8-linux-64bit-installer.run 
+
+expect "to continue:"
+send -- "\n"
+
+expect "to continue:"
+send -- "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+
+
+expect "Do you accept this license? "
+send -- "y\n"
+
+expect " Directory "
+send -- "/opt/tracker\n"
+
+expect "Videos and Experiments"
+send -- "N\n"
+
+expect "Is the selection above correct? "
+send -- "Y\n"
+
+
+expect "Do you want to continue? "
+send -- "Y\n"
+
+expect "View Readme file? "
+send -- "Y\n"
+
+expect "to continue:"
+send -- "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+expect "View Installation Log "
+send -- "y\n"
+expect "Launch Tracker "
+send -- "n\n"
+expect "to continue:"
+send -- "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+expect "to continue:"
+send -- "\n"
+
+
+expect eof
