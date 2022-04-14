@@ -25,4 +25,7 @@ COPY ./run.sh .
 
 RUN chmod +x run.sh
 
+RUN apt-get -y remove \
+    xdg-user-dirs xdg-utils expect 
+
 ENTRYPOINT ["/home/run.sh"]
