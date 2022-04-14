@@ -18,9 +18,8 @@ RUN apt-get -y update && \
 COPY ./expect.exp .
 COPY ./Tracker-6.0.8-linux-64bit-installer.run .
 
-RUN chmod +x Tracker-6.0.8-linux-64bit-installer.run
-
-RUN chmod +x ./expect.exp && ./expect.exp
+RUN chmod +x Tracker-6.0.8-linux-64bit-installer.run && \
+    chmod +x ./expect.exp && ./expect.exp
 
 COPY ./run.sh .
 
