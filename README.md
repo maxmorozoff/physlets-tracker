@@ -4,38 +4,45 @@
 
 ## Usage
 
+### Clone repository 
+
+```console
+git clone https://github.com/maxmorozoff/physlets-tracker.git && \
+cd physlets-tracker
+```
+
 ### Install Docker
 
-```bash
+```console
 make install-docker
 ```
 
 or
 
-```bash
+```console
 sudo ./install-docker.sh
 ```
 
 ### Build Docker image
 
-```bash
+```console
 make build-image
 ```
 
 or
 
-```bash
+```console
 sudo ./physlets-tracker-install.sh build
 ```
 
 ### Run Tracker in Docker
 
-```bash
+```console
 make run
 ```
 
 or
 
-```bash
+```console
 sudo ./physlets-tracker-install.sh
 ```
