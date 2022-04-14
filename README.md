@@ -6,7 +6,7 @@
 
 #### Install Docker:
 ```bash
-sudo make install-docker
+make install-docker
 ```
 
 or
@@ -18,7 +18,7 @@ sudo ./install-docker.sh
 #### Build Docker image
 
 ```bash
-sudo make build-image
+make build-image
 ```
 
 or
@@ -30,7 +30,7 @@ sudo ./physlets-tracker-install.sh build
 #### Run Tracker in Docker
 
 ```bash
-sudo make run
+make run
 ```
 
 or
